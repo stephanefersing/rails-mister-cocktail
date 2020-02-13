@@ -1,0 +1,17 @@
+.cards {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  height: 200px;
+  width: 100%;
+  padding: 32px;
+  margin: 18px;
+
+}
+
+.card-category {
+  height: 200px;
+  width: 100%;
+  display: flex;
+}
+

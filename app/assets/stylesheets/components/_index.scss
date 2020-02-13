@@ -2,3 +2,12 @@
 @import "alert";
 @import "avatar";
 @import "navbar";
+@import "card";
+
+
+// <% @cocktails.each do |cocktail| %>
+//           <li class="list-group-item">
+//              <%= link_to cocktail.name, cocktail_path(cocktail) %>
+//              <%= image_tag "cocktail_image.png", width: 200 %>
+//            </li>
+//          <% end %>

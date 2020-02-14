@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
 
 ingredient_1 = Ingredient.create(name: "lemon")
 ingredient_2 = Ingredient.create(name: "ice")
@@ -21,3 +22,13 @@ cocktail_2 = Cocktail.create(name: "ice grass")
 
 dose_1 = Dose.create(description: "6cl", cocktail_id: 1, ingredient_id: 1)
 dose_2 = Dose.create(description: "6cl", cocktail_id: 2, ingredient_id: 2)
+
+
+
+file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
+cocktail_3 = Cocktail.new(name: "ice grass")
+cocktail_3.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
+
+dose_3 = Dose.create(description: "6cl", cocktail_id: 3, ingredient_id: 3)
+
+

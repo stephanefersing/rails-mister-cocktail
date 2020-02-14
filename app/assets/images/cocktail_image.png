@@ -1,2 +1,0 @@
-curl https://raw.githubusercontent.com/lewagon/fullstack-images/master/lewagon_logo.png > \
-  app/assets/images/cocktail_image.png

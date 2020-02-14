@@ -1,16 +1,15 @@
 <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-      <h1>All cocktails</h1>
+  <h1>All cocktails</h1>
+  <div class="row">
           <% @cocktails.each do |cocktail| %>
-            <div class="cards">
+            <div class="col-4 my-3">
               <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80)">
-                <div style = "text-align: center;">
+                <!-- <div %= image_tag "photo_cocktail.png", class:"card-category", style:"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)" %> -->
                 <%= link_to cocktail.name, cocktail_path(cocktail) %>
-                </div>
               </div>
             </div>
         <% end %>
-      <%= link_to "Add a new cocktail !", new_cocktail_path, class: 'btn btn-primary' %>
-    </div>
+  </div>
+  <%= link_to "Add a new cocktail !", new_cocktail_path, class: 'btn btn-primary' %>
 </div>
 

@@ -16,12 +16,12 @@ ingredient_6 = Ingredient.create(name: "whisky")
 ingredient_7 = Ingredient.create(name: "vodka")
 ingredient_8 = Ingredient.create(name: "rhum")
 
-cocktail_1 = Cocktail.create(name: "lemon grass")
-cocktail_2 = Cocktail.create(name: "ice grass")
+# cocktail_1 = Cocktail.create!(name: "lemon grass")
+# cocktail_2 = Cocktail.create!(name: "ice grass")
 
 
-dose_1 = Dose.create(description: "6cl", cocktail_id: 1, ingredient_id: 1)
-dose_2 = Dose.create(description: "6cl", cocktail_id: 2, ingredient_id: 2)
+# dose_1 = Dose.create(description: "6cl", cocktail_id: 1, ingredient_id: 1)
+# dose_2 = Dose.create(description: "6cl", cocktail_id: 2, ingredient_id: 2)
 
 
 
